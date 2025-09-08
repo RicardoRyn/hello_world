@@ -1,0 +1,4 @@
+site_name: My Docs
+site_url: https://ricardoryn.github.io/hello_world
+theme:
+  name: material
