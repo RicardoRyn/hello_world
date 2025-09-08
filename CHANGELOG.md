@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.8](https://github.com/RicardoRyn/hello_world/compare/v1.6.7...v1.6.8) (2025-09-08)
+
+
+### Bug Fixes 🔧
+
+* **web:** 修复 ([d57b33b](https://github.com/RicardoRyn/hello_world/commit/d57b33bf74408df4e08880267505c38e8c4e9f97))
+
 ## [1.6.7](https://github.com/RicardoRyn/hello_world/compare/v1.6.6...v1.6.7) (2025-09-08)
 
 
