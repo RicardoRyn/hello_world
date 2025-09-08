@@ -24,7 +24,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: |
-          pip install mkdocs-material mike
+          pip install uv
+          uv --sync
           git fetch
-          mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
-          mike set-default --push latest
+          uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+          uv run mike set-default --push latest
