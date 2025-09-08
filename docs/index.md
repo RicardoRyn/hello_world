@@ -39,3 +39,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 网页版本控制是否生效？
 没有，确实需要修改`website_deploy.yml`文件
+
+---
+
+修改完`.github/workflows/website_deploy.yml`，是否生效？
+有用，还是要改`.github/workflows/website_deploy.yml`

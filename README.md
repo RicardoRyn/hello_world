@@ -99,3 +99,18 @@ extra:
   version:
     provider: mike
 ```
+
+修改`.github/workflows/website_deploy.yml`:
+
+```yml
+- name: Get Git tag
+  id: git_tag
+  run: echo "VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+
+- run: |
+    pip install uv
+    uv sync --only-dev
+    git fetch origin gh-pages:gh-pages || true
+    uv run mike deploy --push --update-aliases ${{ env.VERSION }} latest
+    uv run mike set-default --push latest
+```
