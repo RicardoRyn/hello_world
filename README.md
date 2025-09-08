@@ -63,4 +63,4 @@ jobs:
 ```
 
 将目前更改push到 main 分支，静态站点将自动构建并部署。
-如果几分钟后 GitHub 页面仍未显示，前往的仓库设置，并确保 GitHub 页面的发布源分支设置为`gh-pages`
+如果几分钟后 GitHub 页面仍未显示，前往的仓库设置`Deploy from a branch`，并确保 GitHub 页面的发布源分支设置为`gh-pages`
