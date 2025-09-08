@@ -16,12 +16,11 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-## 测试页面
+## 测试
 
 ### 测试1
 
 更改内容之后，`gh-pages`分支是否会保留所有commits？
-
 并没有，`gh-pages`分支只保留最新的commit
 
 ---
@@ -35,3 +34,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 测试在ci文件中使用`uv run mkdocs gh-pages --force`，是否会保留所有的commits？
 不会，`gh-pages`分支只保留最新的commit
+
+### 测试2
+
+网页版本控制是否生效？
