@@ -1,8 +1,7 @@
 name: Website Deploy
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 permissions:
   contents: write
 jobs:
@@ -24,12 +23,7 @@ jobs:
           path: ~/.cache
           restore-keys: |
             mkdocs-material-
-
-      - name: Get Git tag
-        id: git_tag
-        run: echo "VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
-
       - run: |
           pip install mkdocs-material mike
           git fetch
-          mike deploy --push --update-aliases ${{ env.VERSION }} ${{ env.VERSION }}
+          mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
