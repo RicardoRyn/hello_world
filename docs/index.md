@@ -15,3 +15,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## 测试页面
+
+### 测试1
+
+更改内容之后，`gh-pages`分支是否会保留所有commits？
