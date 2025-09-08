@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/RicardoRyn/hello_world/compare/v1.6.0...v1.6.1) (2025-09-08)
+
+
+### Bug Fixes 🔧
+
+* **web:** 还不能正确显示网页版本吗 ([dc7fb54](https://github.com/RicardoRyn/hello_world/commit/dc7fb54b29e7da171bcb65767ab4ce6cfcd197c5))
+
 ## [1.6.0](https://github.com/RicardoRyn/hello_world/compare/v1.5.0...v1.6.0) (2025-09-08)
 
 
