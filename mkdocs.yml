@@ -2,3 +2,6 @@ site_name: My Docs
 site_url: https://ricardoryn.github.io/hello_world
 theme:
   name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss  # 允许用户关闭顶部公告栏

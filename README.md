@@ -15,6 +15,8 @@ release-please是一个可以自动化的版本管理工具，可以帮助你管
 
 ## mkdocs
 
+### 安装与部署
+
 ```bash
 uv add --dev mkdocs-material # 安装mkdocs-material
 uv run mkdocs new .          # 为仓库初始化mkdocs
@@ -64,3 +66,22 @@ jobs:
 
 将目前更改push到 main 分支，静态站点将自动构建并部署。
 如果几分钟后 GitHub 页面仍未显示，前往的仓库设置`Deploy from a branch`，并确保 GitHub 页面的发布源分支设置为`gh-pages`
+
+### 公告栏
+
+创建`overrides/main.html`:
+
+```html
+{% extends "base.html" %} {% block announce %}
+<strong>📢 公告栏。Announcement Bar. </strong>
+{% endblock %}
+```
+
+在`mkdocs.yml`中添加:
+
+```yml
+theme:
+  custom_dir: overrides
+  features:
+    - announce.dismiss # 允许用户关闭顶部公告栏
+```
