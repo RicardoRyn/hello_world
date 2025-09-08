@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/RicardoRyn/hello_world/compare/v1.8.0...v1.8.1) (2025-09-08)
+
+
+### Bug Fixes 🔧
+
+* **web:** uv sync 不是 uv --sync ([6dd357e](https://github.com/RicardoRyn/hello_world/commit/6dd357eb973cbb105e7fb13f0dcbe7ab07fbda4b))
+
 ## [1.8.0](https://github.com/RicardoRyn/hello_world/compare/v1.7.9...v1.8.0) (2025-09-08)
 
 
