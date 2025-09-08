@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/RicardoRyn/hello_world/compare/v1.1.0...v1.2.0) (2025-09-08)
+
+
+### Features ✨
+
+* **announcement:** 增加公告栏 ([f9a5f8f](https://github.com/RicardoRyn/hello_world/commit/f9a5f8fd3578e07d41743f0d32acb687f9d1391e))
+
 ## [1.1.0](https://github.com/RicardoRyn/hello_world/compare/v1.0.0...v1.1.0) (2025-09-08)
 
 
