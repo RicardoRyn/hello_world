@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/RicardoRyn/hello_world/compare/v1.0.0...v1.1.0) (2025-09-08)
+
+
+### Features ✨
+
+* **mkdocs:** 使用mkdocs自动部署网页 ([8e56107](https://github.com/RicardoRyn/hello_world/commit/8e56107d93197b2ad82326106b000ab7e1f000fa))
+
 ## [1.0.0](https://github.com/RicardoRyn/hello_world/compare/v0.1.0...v1.0.0) (2025-09-08)
 
 
