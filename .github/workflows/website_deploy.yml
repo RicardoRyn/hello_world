@@ -24,8 +24,12 @@ jobs:
           path: ~/.cache
           restore-keys: |
             mkdocs-material-
+
+      - name: Get Git tag
+        id: git_tag
+        run: echo "VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+
       - run: |
           pip install mkdocs-material mike
-          git fetch --tags
-          TAG=$(git describe --tags --abbrev=0)
-          mike deploy --push --update-aliases $TAG $TAG
+          git fetch
+          mike deploy --push --update-aliases ${{ env.VERSION }} latest
