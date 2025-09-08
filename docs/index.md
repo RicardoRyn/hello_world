@@ -34,3 +34,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ---
 
 测试在ci文件中使用`uv run mkdocs gh-pages --force`，是否会保留所有的commits？
+不会，`gh-pages`分支只保留最新的commit
