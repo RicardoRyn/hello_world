@@ -8,3 +8,4 @@ theme:
 extra:
   version:
     provider: mike
+    alias: true
