@@ -38,3 +38,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ### 测试2
 
 网页版本控制是否生效？
+没有，确实需要修改`website_deploy.yml`文件
