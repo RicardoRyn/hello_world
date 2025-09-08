@@ -1,5 +1,5 @@
 site_name: My Docs
-site_url: https://ricardoryn.github.io/hello_world
+site_url: "https://ricardoryn.github.io/hello_world/"
 theme:
   name: material
   custom_dir: overrides
