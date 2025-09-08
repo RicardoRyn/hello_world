@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/RicardoRyn/hello_world/compare/v1.2.0...v1.3.0) (2025-09-08)
+
+
+### Features ✨
+
+* **web:** 增加网页版本控制 ([bc540b3](https://github.com/RicardoRyn/hello_world/commit/bc540b33d149b47a820af30fff17ad05117f8280))
+
+
+### Bug Fixes 🔧
+
+* **web:** 修复网页版本控制 ([6590dbf](https://github.com/RicardoRyn/hello_world/commit/6590dbf4dc83b7d3819293384699db50e8daa60b))
+
 ## [1.2.0](https://github.com/RicardoRyn/hello_world/compare/v1.1.0...v1.2.0) (2025-09-08)
 
 
