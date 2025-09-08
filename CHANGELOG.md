@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/RicardoRyn/hello_world/compare/v1.7.9...v1.8.0) (2025-09-08)
+
+
+### Features ✨
+
+* **web:** 终于成了 ([8b1d1dc](https://github.com/RicardoRyn/hello_world/commit/8b1d1dcfde7323247cd5f77ca766f1f3cdd793e6))
+
 ## [1.7.9](https://github.com/RicardoRyn/hello_world/compare/v1.7.8...v1.7.9) (2025-09-08)
 
 
