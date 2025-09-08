@@ -26,6 +26,6 @@ jobs:
             mkdocs-material-
       - run: |
           pip install mkdocs-material mike
-          git fetch
-          echo ${{ github.event.release.tag_name }}
-          mike deploy --push --update-aliases ${{ github.event.release.tag_name }} ${{ github.event.release.tag_name }}
+          git fetch --tags
+          TAG=$(git describe --tags --abbrev=0)
+          mike deploy --push --update-aliases $TAG $TAG
