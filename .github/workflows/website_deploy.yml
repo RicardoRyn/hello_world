@@ -1,4 +1,4 @@
-name: Latest Release Docs
+name: Website Deploy
 on:
   push:
     branches:
