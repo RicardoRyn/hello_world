@@ -23,8 +23,5 @@ jobs:
           path: ~/.cache
           restore-keys: |
             mkdocs-material-
-      - run: |
-          pip install uv
-          uv sync --only-dev
-          git fetch origin gh-pages || true
-          uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+      - run: pip install mkdocs-material mike
+      - run: mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
