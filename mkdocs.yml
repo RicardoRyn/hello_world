@@ -4,4 +4,7 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - announce.dismiss  # 允许用户关闭顶部公告栏
+    - announce.dismiss # 允许用户关闭顶部公告栏
+extra:
+  version:
+    provider: mike

@@ -85,3 +85,17 @@ theme:
   features:
     - announce.dismiss # 允许用户关闭顶部公告栏
 ```
+
+### 网页版本控制
+
+```bash
+uv add --dev mike
+```
+
+在`mkdocs.yml`中添加:
+
+```yml
+extra:
+  version:
+    provider: mike
+```
