@@ -21,3 +21,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ### 测试1
 
 更改内容之后，`gh-pages`分支是否会保留所有commits？
+并没有，`gh-pages`分支只保留最新的commit
+
+再次更改后，`gh-pages`分支是否会保留所有commits？
