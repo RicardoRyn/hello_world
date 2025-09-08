@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/RicardoRyn/hello_world/compare/v1.3.0...v1.4.0) (2025-09-08)
+
+
+### Features ✨
+
+* **main:** 网页能否显示正确的版本 ([b2fdd97](https://github.com/RicardoRyn/hello_world/commit/b2fdd9771f0803d38ae7ea2c9e26d56eb6141814))
+
 ## [1.3.0](https://github.com/RicardoRyn/hello_world/compare/v1.2.0...v1.3.0) (2025-09-08)
 
 
