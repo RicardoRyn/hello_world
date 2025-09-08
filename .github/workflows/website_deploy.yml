@@ -34,5 +34,6 @@ jobs:
           pip install uv
           uv sync --only-dev
           # git fetch origin gh-pages:gh-pages || true
+          git pull origin gh-pages
           uv run mike deploy --push --update-aliases ${{ env.VERSION }} latest
           uv run mike set-default --push latest
