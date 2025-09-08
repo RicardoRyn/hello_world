@@ -25,7 +25,7 @@ jobs:
             mkdocs-material-
       - run: |
           pip install uv
-          uv --sync
+          uv sync
           git fetch
           uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
           uv run mike set-default --push latest
