@@ -25,4 +25,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material mike
+      - run: git fetch
       - run: mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
