@@ -28,4 +28,5 @@ jobs:
       - run: |
           pip install uv
           uv sync --only-dev
+          git fetch origin gh-pages || true
           uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
