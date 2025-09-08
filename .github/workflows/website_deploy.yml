@@ -33,6 +33,7 @@ jobs:
       - run: |
           pip install uv
           uv sync --only-dev
-          git fetch origin gh-pages:gh-pages || true
-          uv run mike deploy ${{ env.VERSION }} latest
-          uv run mike set-default ${{ env.VERSION }} latest
+          # git fetch origin gh-pages:gh-pages || true
+          # uv run mike deploy ${{ env.VERSION }} latest
+          # uv run mike set-default ${{ env.VERSION }} latest
+          uv run mike deploy --push --update-aliases ${{ env.VERSION }} latest
