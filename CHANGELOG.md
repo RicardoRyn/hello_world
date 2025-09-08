@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.4](https://github.com/RicardoRyn/hello_world/compare/v1.7.3...v1.7.4) (2025-09-08)
+
+
+### Bug Fixes 🔧
+
+* **web:** fix ([17506d4](https://github.com/RicardoRyn/hello_world/commit/17506d40f8fa794f9722d6c0a799fd5f50e276f2))
+
 ## [1.7.3](https://github.com/RicardoRyn/hello_world/compare/v1.7.2...v1.7.3) (2025-09-08)
 
 
