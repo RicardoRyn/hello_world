@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/RicardoRyn/hello_world/compare/v1.5.0...v1.6.0) (2025-09-08)
+
+
+### Features ✨
+
+* **main:** 再假设有新功能 ([a6bbbe2](https://github.com/RicardoRyn/hello_world/commit/a6bbbe2100de6bc5cc17497f834e20fc0c862488))
+
 ## [1.5.0](https://github.com/RicardoRyn/hello_world/compare/v1.4.0...v1.5.0) (2025-09-08)
 
 
