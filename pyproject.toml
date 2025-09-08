@@ -1,6 +1,6 @@
 [project]
 name = "hello-world"
-version = "1.6.8"
+version = "1.7.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
