@@ -32,4 +32,4 @@ jobs:
       - run: |
           pip install mkdocs-material mike
           git fetch
-          mike deploy --push --update-aliases ${{ env.VERSION }} latest
+          mike deploy --push --update-aliases ${{ env.VERSION }} ${{ env.VERSION }}
