@@ -1,8 +1,8 @@
-name: Website Deploy
+name: Website Deploy Release
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
+
 permissions:
   contents: write
 jobs:
