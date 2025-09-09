@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.5](https://github.com/RicardoRyn/hello_world/compare/v1.9.4...v1.9.5) (2025-09-09)
+
+
+### Bug Fixes 🔧
+
+* **web:** 恢复，不要公告栏 ([6c2246f](https://github.com/RicardoRyn/hello_world/commit/6c2246fb1714e47a7ffac4598a0a4b66459a8e13))
+
 ## [1.9.4](https://github.com/RicardoRyn/hello_world/compare/v1.9.3...v1.9.4) (2025-09-09)
 
 
