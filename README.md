@@ -101,6 +101,18 @@ extra:
     alias: true
 ```
 
+在`overrides/main.html`添加 (只有拥有该内容的版本才会显示过时信息。如果以前的网页没有该内容，就不会显示):
+
+```html
+{% extends "base.html" %} {% block outdated %} 你正在查看的不是最新版本。
+<a href="{{ '../' ~ base_url }}">
+  <strong>点此查看最新版。</strong>
+</a>
+{% endblock %}
+```
+
+> 如果`{% extends "base.html" %}`已经写过了，就不用再写了。
+
 修改`.github/workflows/website_deploy.yml`:
 
 ```yml

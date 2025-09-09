@@ -2,7 +2,7 @@ name: Website Deploy
 on:
   push:
     branches:
-      - dev
+      - main
 permissions:
   contents: write
 jobs:
@@ -28,4 +28,5 @@ jobs:
           pip install uv
           uv sync
           git fetch
-          uv run mike deploy --push develop
+          uv run mike deploy --push --update-aliases $(git describe --tags --abbrev=0) latest
+          uv run mike set-default --push latest
