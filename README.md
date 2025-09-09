@@ -98,19 +98,42 @@ uv add --dev mike
 extra:
   version:
     provider: mike
+    alias: true
 ```
 
 修改`.github/workflows/website_deploy.yml`:
 
 ```yml
-- name: Get Git tag
-  id: git_tag
-  run: echo "VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
-
-- run: |
-    pip install uv
-    uv sync --only-dev
-    git fetch origin gh-pages:gh-pages || true
-    uv run mike deploy --push --update-aliases ${{ env.VERSION }} latest
-    uv run mike set-default --push latest
+name: Website Deploy
+on:
+  release:
+    types: [published] # 必须改成 release 时触发
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: ~/.cache
+          restore-keys: |
+            mkdocs-material-
+      - run: |
+          pip install uv
+          uv sync
+          git fetch
+          # ${{ github.event.release.tag_name }}依赖release作为触发源
+          uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
+          uv run mike set-default --push latest
 ```
