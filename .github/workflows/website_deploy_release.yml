@@ -67,20 +67,7 @@ jobs:
         run: |
           summary="${{ steps.inference.outputs.response }}"
           mkdir -p overrides
-          printf '%s\n' \
-            '{%% extends "base.html" %%}' \
-            '' \
-            '{%% block announce %%}' \
-            "  <strong>📢 $summary <a href=\"/plotfig/changelog\">点击查看详情</a></strong>" \
-            '{%% endblock %%}' \
-            '' \
-            '{%% block outdated %%}' \
-            '  你正在查看的不是最新版本。' \
-            '  <a href="{{ '\''../'\'' ~ base_url }}">' \
-            '    <strong>点此查看最新版。</strong>' \
-            '  </a>' \
-            '{%% endblock %%}' \
-            > overrides/main.html
+          printf '{%% extends "base.html" %%}\n\n{%% block announce %%}\n  <strong>📢 %s <a href="/plotfig/changelog">点击查看详情</a></strong>\n{%% endblock %%}\n\n{% block outdated %}\n  你正在查看的不是最新版本。\n  <a href="{{ '../' ~ base_url }}">\n    <strong>点此查看最新版。</strong>\n  </a>\n{% endblock %}' "$summary" > overrides/main.html
 
       - name: Copy CHANGELOG.md to docs/
         run: cp CHANGELOG.md docs/changelog.md
