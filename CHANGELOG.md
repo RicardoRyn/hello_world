@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.3](https://github.com/RicardoRyn/hello_world/compare/v1.8.2...v1.8.3) (2025-09-09)
+
+
+### Bug Fixes 🔧
+
+* **web:** 为啥只有develop显示警告呢？ ([0b3eb05](https://github.com/RicardoRyn/hello_world/commit/0b3eb05fd4c0f5f7eabfae0ccd508057536912c7))
+
 ## [1.8.2](https://github.com/RicardoRyn/hello_world/compare/v1.8.1...v1.8.2) (2025-09-09)
 
 
