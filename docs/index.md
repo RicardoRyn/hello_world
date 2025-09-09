@@ -37,7 +37,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### 测试2
 
-当前网页版本应为 `1.8.7`
+当前网页版本应为 `1.9.0`
 
 ---
 
