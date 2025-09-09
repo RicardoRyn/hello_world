@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.3](https://github.com/RicardoRyn/hello_world/compare/v1.9.2...v1.9.3) (2025-09-09)
+
+
+### Bug Fixes 🔧
+
+* **web:** 修复公告栏不显示的问题 ([c293359](https://github.com/RicardoRyn/hello_world/commit/c2933593b8f1eb408f4db289b8db2b76995bc9af))
+
 ## [1.9.2](https://github.com/RicardoRyn/hello_world/compare/v1.9.1...v1.9.2) (2025-09-09)
 
 
