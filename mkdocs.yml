@@ -9,3 +9,6 @@ extra:
   version:
     provider: mike
     alias: true
+nav:
+  - 主页: index.md
+  - 更新日志: changelog.md
