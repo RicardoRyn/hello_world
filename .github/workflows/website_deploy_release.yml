@@ -1,8 +1,7 @@
-name: Website Deploy
+name: Website Deploy Release
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 permissions:
   contents: write
 jobs:
@@ -28,5 +27,5 @@ jobs:
           pip install uv
           uv sync
           git fetch
-          uv run mike deploy --push --update-aliases $(git describe --tags --abbrev=0) latest
+          uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
           uv run mike set-default --push latest
