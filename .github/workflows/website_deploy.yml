@@ -1,7 +1,8 @@
-name: Website Deploy Release
+name: Website Deploy
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 permissions:
   contents: write
 jobs:
@@ -66,8 +67,9 @@ jobs:
         if: steps.changelog_check.outputs.changed == 'true'
         run: |
           summary="${{ steps.inference.outputs.response }}"
+          # 使用 printf 保证换行缩进和变量替换都准确
           mkdir -p overrides
-          printf '{%% extends "base.html" %%}\n\n{%% block announce %%}\n  <strong>📢 %s <a href="/plotfig/changelog">点击查看详情</a></strong>\n{%% endblock %%}\n\n{% block outdated %}\n  你正在查看的不是最新版本。\n  <a href="{{ '../' ~ base_url }}">\n    <strong>点此查看最新版。</strong>\n  </a>\n{% endblock %}' "$summary" > overrides/main.html
+          printf '{%% extends "base.html" %%}\n\n{%% block announce %%}\n  <strong>📢 %s <a href="/plotfig/changelog">点击查看详情</a></strong>\n{%% endblock %%}\n' "$summary" > overrides/main.html
 
       - name: Copy CHANGELOG.md to docs/
         run: cp CHANGELOG.md docs/changelog.md
@@ -75,7 +77,5 @@ jobs:
       - name: Website Deploy
         run: |
           pip install uv
-          uv sync
-          git fetch
-          uv run mike deploy --push --update-aliases ${{ github.event.release.tag_name }} latest
-          uv run mike set-default --push latest
+          uv sync --only-dev
+          uv run mkdocs gh-deploy --force
