@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.9.0](https://github.com/RicardoRyn/hello_world/compare/v1.8.7...v1.9.0) (2025-09-09)
+
+
+### Features ✨
+
+* **web:** 自动总结公告栏 ([dc881b2](https://github.com/RicardoRyn/hello_world/commit/dc881b2199aedef9d2ce2e9a653af65ccabd9457))
+
+
+### Bug Fixes 🔧
+
+* **web:** fix ([5209288](https://github.com/RicardoRyn/hello_world/commit/52092884241a18319ad0345b7e5cad62469d6ab6))
+
 ## [1.8.7](https://github.com/RicardoRyn/hello_world/compare/v1.8.6...v1.8.7) (2025-09-09)
 
 
