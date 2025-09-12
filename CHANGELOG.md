@@ -5,7 +5,6 @@
 
 ### Code Refactoring ♻️
 
-* **main:** 版本号码将如何变化 ([aa48c45](https://github.com/RicardoRyn/hello_world/commit/aa48c45589b786611d9edae7f21932c29d2021f7))
 * **main:** 版本号码将如何变化 ([247209b](https://github.com/RicardoRyn/hello_world/commit/247209ba96d7c2206101688247225237ea1d5898))
 
 ## [1.9.5](https://github.com/RicardoRyn/hello_world/compare/v1.9.4...v1.9.5) (2025-09-09)
